@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="generator" content="HelpNDoc Standard Edition 9.9.0.637">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -17,6 +17,7 @@
 
 
 
+  
   
 
   <!-- Twitter Card data -->
@@ -72,6 +73,8 @@
 
 
 
+  
+
   <div id="skip-link">
     <a href="#main-content" class="element-invisible">Skip to main content</a>
   </div>
@@ -88,8 +91,8 @@
   <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
-      <li id="nav-close"> 
-        <button class="hnd-toggle btn btn-default">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </button>
       </li>
@@ -129,9 +132,9 @@
             <form id="search-form">
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
                       <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                     </button>
                   </span>
@@ -178,45 +181,45 @@
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Summary</span></span></h1>
 <p class="rvps2"><span class="rvts6">This topic demonstrates how to use the selection rectangle for atom selection and subsequent actions.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="326" height="336" alt="" style="padding : 1px;" src="lib/Selection_Summary.png"></p>
+<p class="rvps2"><img alt="" style="width : 326px; height : 336px; padding : 1px;" src="lib/Selection_Summary.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<hr style="height : 1px; background-color : #000000; border-style : none;">
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Step by Step</span></span></h1>
 <p class="rvps2"><span class="rvts6">To select a full or partial structure, just drag the mouse over the range to be selected. While dragging, a blue selection rectangle is expanded, which also remains present after the mouse is released, to allow further action on the selection. Press ESC to clear the selection if no further actions are required.</span></p>
 <p class="rvps2"><span class="rvts18"><br/></span></p>
-<p class="rvps2"><img width="190" height="120" alt="" style="padding : 1px;" src="lib/Selection_SelRect.png"></p>
+<p class="rvps2"><img alt="" style="width : 190px; height : 120px; padding : 1px;" src="lib/Selection_SelRect.png"></p>
 <p class="rvps2"><span class="rvts18"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The atoms to be selected may not always fit into a rectangle. To adjust the selection, </span><span class="rvts19">SHIFT-Click</span><span class="rvts6"> individual atoms to selectively toggle their selection. Atoms selected outside the selection rectangle will be treated as part of the selection rectangle.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">While expanding the selection rectangle, a panel displaying the elemental formula, molecular weight and exact mass of the current selection appears at the top left corner of the editor to provide feedback on fragment masses; this also works for </span><a class="rvts24" href="PeptideDrawing.html">peptide sequences</a><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><span class="rvts6">&nbsp; &nbsp;</span><img width="136" height="81" alt="" style="padding : 1px;" src="lib/Selection_Properties.png"></p>
+<p class="rvps2"><span class="rvts6">&nbsp; &nbsp;</span><img alt="" style="width : 136px; height : 81px; padding : 1px;" src="lib/Selection_Properties.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps6"><span class="rvts6">Following actions can be performed on the blue selection rectangle:</span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps2"><span class="rvts6">Rotate of the selection (drag the curved rotation arrow at the bottom right corner)</span></li>
- <li class="rvps2"><span class="rvts6">Move the selection (drag the selection rectangle)</span></li>
- <li class="rvps2"><span class="rvts6">Perform structural actions (right-click the rectangle to display its context menu, see below)</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">Rotate of the selection (drag the curved rotation arrow at the bottom right corner)</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">Move the selection (drag the selection rectangle)</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">Perform structural actions (right-click the rectangle to display its context menu, see below)</span></li>
 </ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Right-clicking the selection rectangle opens its </span><span class="rvts19">context menu</span><span class="rvts6">:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="345" height="356" alt="" style="padding : 1px;" src="lib/Selection_Summary1.png"></p>
+<p class="rvps2"><img alt="" style="width : 345px; height : 356px; padding : 1px;" src="lib/Selection_Summary1.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Following actions on the current selection can be performed:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
- <li class="rvps2"><span class="rvts19">Delete</span><span class="rvts6"> the selection.</span></li>
- <li class="rvps2"><a class="rvts24" href="CopyPasteDuplicate.html">Copy</a><span class="rvts6"> the selection (can also be pasted into a third party chemical drawing application).</span></li>
- <li class="rvps2"><a class="rvts24" href="CopyPasteDuplicate.html">Duplicate</a><span class="rvts6">: Copies the selection and appends it to the reactants or products.</span></li>
- <li class="rvps2"><a class="rvts24" href="GroupingUngrouping.html">Group</a><span class="rvts6">: Merges two or more reaction components into one (e.g. for drawing a salts).</span></li>
- <li class="rvps2"><span class="rvts6">Flip the selected structure vertically-</span></li>
- <li class="rvps2"><span class="rvts6">Flip the selected structure horizontally.</span></li>
- <li class="rvps2"><a class="rvts24" href="Abbreviations.html">Abbreviate</a><span class="rvts6"> the selection to a label.</span></li>
- <li class="rvps2"><span class="rvts6">Add a virtual center atom for creating </span><a class="rvts24" href="OrganometallicBonds.html">organometallic bonds</a><span class="rvts6">.</span></li>
- <li class="rvps2"><span class="rvts6">Specify the selection as a </span><a class="rvts24" href="RepeatingGroups.html">repeating group</a><span class="rvts6">.</span></li>
- <li class="rvps2"><span class="rvts6">Specify the selection as a </span><a class="rvts24" href="Polymers.html">polymer</a><span class="rvts6">.</span></li>
- <li class="rvps2"><span class="rvts6">Assign a component type to a fully selected reaction component.</span></li>
+ <li class="rvps2 noindent"><span class="rvts19">Delete</span><span class="rvts6"> the selection.</span></li>
+ <li class="rvps2 noindent"><a class="rvts24" href="CopyPasteDuplicate.html">Copy</a><span class="rvts6"> the selection (can also be pasted into a third party chemical drawing application).</span></li>
+ <li class="rvps2 noindent"><a class="rvts24" href="CopyPasteDuplicate.html">Duplicate</a><span class="rvts6">: Copies the selection and appends it to the reactants or products.</span></li>
+ <li class="rvps2 noindent"><a class="rvts24" href="GroupingUngrouping.html">Group</a><span class="rvts6">: Merges two or more reaction components into one (e.g. for drawing a salts).</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">Flip the selected structure vertically-</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">Flip the selected structure horizontally.</span></li>
+ <li class="rvps2 noindent"><a class="rvts24" href="Abbreviations.html">Abbreviate</a><span class="rvts6"> the selection to a label.</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">Add a virtual center atom for creating </span><a class="rvts24" href="OrganometallicBonds.html">organometallic bonds</a><span class="rvts6">.</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">Specify the selection as a </span><a class="rvts24" href="RepeatingGroups.html">repeating group</a><span class="rvts6">.</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">Specify the selection as a </span><a class="rvts24" href="Polymers.html">polymer</a><span class="rvts6">.</span></li>
+ <li class="rvps2 noindent"><span class="rvts6">Assign a component type to a fully selected reaction component.</span></li>
 </ul>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -259,11 +262,11 @@
   <div id="hnd-splitter" style="left: 350px"></div>  
 
   <!-- Scripts -->
-  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
   <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
@@ -277,22 +280,7 @@
   <script src="js/app.min.js"></script>
 
   <!-- Init script -->
-  <script>
-    $(function() {
-      // Create the app
-      var app = new Hnd.App({
-        searchEngineMinChars: 3
-      });
-      // Update translations
-      hnd_ut(app);
-	  // Instanciate imageMapResizer
-	  imageMapResize();
-	  // Custom JS
-	  
-      // Boot the app
-      app.Boot();
-    });
-  </script>
+  <script src="_topic_init.js"></script>
 
 
 

@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="generator" content="HelpNDoc Standard Edition 9.9.0.637">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -17,6 +17,7 @@
 
 
 
+  
   
 
   <!-- Twitter Card data -->
@@ -72,6 +73,8 @@
 
 
 
+  
+
   <div id="skip-link">
     <a href="#main-content" class="element-invisible">Skip to main content</a>
   </div>
@@ -88,8 +91,8 @@
   <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
-      <li id="nav-close"> 
-        <button class="hnd-toggle btn btn-default">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </button>
       </li>
@@ -129,9 +132,9 @@
             <form id="search-form">
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
                       <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                     </button>
                   </span>
@@ -178,13 +181,13 @@
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Summary</span></span></h1>
 <p class="rvps2"><span class="rvts6">This topic demonstrates how to specify a polymer.A polymer consists of repeating chemical fragments.Other than in </span><a class="rvts24" href="RepeatingGroups.html">repeating groups</a><span class="rvts6">, the exact repeat count generally is unknown here. The right part of the screen shot blow shows the common polymer notation: The fragment within the square brackets represents the repeated unit in the final polymer, the 'n' suffix on the bracket symbolizes the unknown count, and the two (virtual) 'star' atoms represent the attachment points of the repeating fragment to its neighbors in the polymer backbone.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="304" height="136" alt="" style="padding : 1px;" src="lib/Polymer_Summary1.png"></p>
+<p class="rvps2"><img alt="" style="width : 304px; height : 136px; padding : 1px;" src="lib/Polymer_Summary1.png"></p>
 <p class="rvps2"><span class="rvts6"></span><br/><span class="rvts18"><br/></span></p>
-<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<hr style="height : 1px; background-color : #000000; border-style : none;">
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Step by Step</span></span></h1>
 <p class="rvps2"><span class="rvts6">Best start by drawing the monomer structure </span><span class="rvts19">(1)</span><span class="rvts6">. Then add the two bonds symbolizing the connection it to its neighbors in the final polymer, and adjust the bond orders where necessary </span><span class="rvts19">(2) -</span><span class="rvts6"> the final star atom symbols will be assigned by the application in the next step</span><span class="rvts19">.</span><span class="rvts6"> Then drag the selection rectangle over the atoms which are repeated in the polymer backbone to select them. Finally right-click the selection rectangle to open its context menu </span><span class="rvts19">(3)</span><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="748" height="298" alt="" style="padding : 1px;" src="lib/Polymer_Sequence1.png"></p>
+<p class="rvps2"><img alt="" style="width : 748px; height : 298px; padding : 1px;" src="lib/Polymer_Sequence1.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Click </span><span class="rvts19">Polymer SRU</span><span class="rvts6"> in the context menu and select one of the possible connection modes: </span><span class="rvts19">ht</span><span class="rvts6"> (head-to-tail; default), </span><span class="rvts19">hh</span><span class="rvts6"> (head-head) or </span><span class="rvts19">eu</span><span class="rvts6"> (either or unknown). This will draw the polymer notation brackets </span><span class="rvts19">(4)</span><span class="rvts6">; the default 'ht' symbol is not explicitly drawn on the brackets.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -224,11 +227,11 @@
   <div id="hnd-splitter" style="left: 350px"></div>  
 
   <!-- Scripts -->
-  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
   <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
@@ -242,22 +245,7 @@
   <script src="js/app.min.js"></script>
 
   <!-- Init script -->
-  <script>
-    $(function() {
-      // Create the app
-      var app = new Hnd.App({
-        searchEngineMinChars: 3
-      });
-      // Update translations
-      hnd_ut(app);
-	  // Instanciate imageMapResizer
-	  imageMapResize();
-	  // Custom JS
-	  
-      // Boot the app
-      app.Boot();
-    });
-  </script>
+  <script src="_topic_init.js"></script>
 
 
 

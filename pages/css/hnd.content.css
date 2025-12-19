@@ -226,7 +226,7 @@ span.rvts35
 }
 span.rvts36
 {
- font-family: Symbola, 'Arial Unicode MS', 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif;
+ font-family: Symbola, 'Lucida Sans Unicode', 'Arial', 'Helvetica', sans-serif;
 }
 span.rvts37
 {
@@ -262,7 +262,7 @@ p,ul,ol /* Paragraph Style */
 {
  text-align: left;
  text-indent: 0px;
- page-break-after: avoid;
+ break-after: avoid;
  padding: 0px 0px 0px 0px;
  margin: 16px 0px 14px 0px;
 }
@@ -279,7 +279,7 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps6
 {
- line-height: 1.50;
+ line-height: 1.80;
 }
 .rvps7
 {
@@ -291,31 +291,35 @@ p,ul,ol /* Paragraph Style */
 }
 .rvps8
 {
- line-height: 1.15;
+ margin: 8px 0px 6px 0px;
 }
 .rvps9
 {
- text-align: left;
- text-indent: 0px;
- line-height: 1.50;
- page-break-after: avoid;
- padding: 0px 0px 0px 0px;
- margin: 16px 0px 4px 0px;
+ line-height: 1.38;
 }
 .rvps10
 {
- line-height: 1.15;
- margin: 0px 0px 0px 24px;
+ text-align: left;
+ text-indent: 0px;
+ line-height: 1.80;
+ break-after: avoid;
+ padding: 0px 0px 0px 0px;
+ margin: 16px 0px 4px 0px;
 }
 .rvps11
 {
- line-height: 1.15;
- margin: 0px 0px 10px 0px;
+ line-height: 1.38;
+ margin: 0px 0px 0px 24px;
 }
 .rvps12
 {
- line-height: 1.50;
- page-break-after: avoid;
+ line-height: 1.38;
+ margin: 0px 0px 10px 0px;
+}
+.rvps13
+{
+ line-height: 1.80;
+ break-after: avoid;
  margin: 16px 0px 4px 0px;
 }
 /* ========== Lists ========== */
@@ -325,3 +329,4 @@ p,ul,ol /* Paragraph Style */
 .list3 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside; list-style-type: disc;}
 .list4 {text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside;}
 .list5 {text-indent: 0px; padding: 0; margin: 0 0 0 48px; list-style-position: outside;}
+li.noindent { margin-left: 0; padding-left: 0; }

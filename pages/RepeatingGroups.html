@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="generator" content="HelpNDoc Standard Edition 9.9.0.637">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -17,6 +17,7 @@
 
 
 
+  
   
 
   <!-- Twitter Card data -->
@@ -72,6 +73,8 @@
 
 
 
+  
+
   <div id="skip-link">
     <a href="#main-content" class="element-invisible">Skip to main content</a>
   </div>
@@ -88,8 +91,8 @@
   <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
-      <li id="nav-close"> 
-        <button class="hnd-toggle btn btn-default">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </button>
       </li>
@@ -129,9 +132,9 @@
             <form id="search-form">
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
                       <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                     </button>
                   </span>
@@ -178,17 +181,17 @@
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Summary</span></span></h1>
 <p class="rvps2"><span class="rvts6">This topic demonstrates how to specify repeating structure units.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="492" height="82" alt="" style="padding : 1px;" src="lib/RepeatingGroup_Summary1.png"></p>
+<p class="rvps2"><img alt="" style="width : 492px; height : 82px; padding : 1px;" src="lib/RepeatingGroup_Summary1.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<hr style="height : 1px; background-color : #000000; border-style : none;">
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Step by Step</span></span></h1>
 <p class="rvps2"><span class="rvts6">Draw the shortened structure, then select the atoms representing the repeating unit using the selection rectangle. Right-click the selection rectangle and click </span><span class="rvts19">Repeating Group ....</span><span class="rvts6"> in the appearing context menu.</span></p>
 <p class="rvps2"><span class="rvts6">&nbsp;</span></p>
-<p class="rvps2"><img width="223" height="275" alt="" style="padding : 1px;" src="lib/RepeatingGroup_Context.png"></p>
+<p class="rvps2"><img alt="" style="width : 223px; height : 275px; padding : 1px;" src="lib/RepeatingGroup_Context.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">This will display a dialog which the specification of the repeat count.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="463" height="156" alt="" style="padding : 1px;" src="lib/RepeatingGroup_Dialog.png"></p>
+<p class="rvps2"><img alt="" style="width : 463px; height : 156px; padding : 1px;" src="lib/RepeatingGroup_Dialog.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">After clicking OK, the repeat brackets are applied. Please note that molecular weight and elemental formula of the resulting structure correspond to the structure actually containing the specified number of repeated units.</span></p>
 <p class="rvps2"><span class="rvts6">&nbsp;&nbsp;</span></p>
@@ -228,11 +231,11 @@
   <div id="hnd-splitter" style="left: 350px"></div>  
 
   <!-- Scripts -->
-  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
   <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
@@ -246,22 +249,7 @@
   <script src="js/app.min.js"></script>
 
   <!-- Init script -->
-  <script>
-    $(function() {
-      // Create the app
-      var app = new Hnd.App({
-        searchEngineMinChars: 3
-      });
-      // Update translations
-      hnd_ut(app);
-	  // Instanciate imageMapResizer
-	  imageMapResize();
-	  // Custom JS
-	  
-      // Boot the app
-      app.Boot();
-    });
-  </script>
+  <script src="_topic_init.js"></script>
 
 
 

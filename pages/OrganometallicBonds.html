@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="generator" content="HelpNDoc Standard Edition 9.9.0.637">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -17,6 +17,7 @@
 
 
 
+  
   
 
   <!-- Twitter Card data -->
@@ -72,6 +73,8 @@
 
 
 
+  
+
   <div id="skip-link">
     <a href="#main-content" class="element-invisible">Skip to main content</a>
   </div>
@@ -88,8 +91,8 @@
   <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
-      <li id="nav-close"> 
-        <button class="hnd-toggle btn btn-default">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </button>
       </li>
@@ -129,9 +132,9 @@
             <form id="search-form">
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
                       <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                     </button>
                   </span>
@@ -178,15 +181,15 @@
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Summary</span></span></h1>
 <p class="rvps2"><span class="rvts6">This topic demonstrates how to specify organometallic haptic bonds (ligand bonds).</span></p>
 <p class="rvps2"><span class="rvts18"><br/></span></p>
-<p class="rvps2"><img width="296" height="86" alt="" style="padding : 1px;" src="lib/Organomet_Summary.png"></p>
+<p class="rvps2"><img alt="" style="width : 296px; height : 86px; padding : 1px;" src="lib/Organomet_Summary.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<hr style="height : 1px; background-color : #000000; border-style : none;">
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Step by Step</span></span></h1>
 <p class="rvps2"><span class="rvts6">Haptic bonds can be created for cyclic as well as for non-cyclic ligands. At least 3 connected ligand centers are required for haptic bond creation.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">The example below demonstrates how to draw ferrocene: To start with, first draw the ligand which will contain the haptic bond centers; please note that it is not necessary to specify any double bonds, since they will be removed in the process anyway. Then select the atoms which will be part of the haptic bond by using the selection rectangle, followed by right-clicking selection area and selecting </span><span class="rvts19">Create Multicenter Bond</span><span class="rvts6"> menu item in the appearing context menu </span><span class="rvts19">(1)</span><span class="rvts6">.&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="705" height="281" alt="" style="padding : 1px;" src="lib/Organomet_Sequence1.png"></p>
+<p class="rvps2"><img alt="" style="width : 705px; height : 281px; padding : 1px;" src="lib/Organomet_Sequence1.png"></p>
 <p class="rvps2"><span class="rvts18"><br/></span></p>
 <p class="rvps2"><span class="rvts6">This will create the haptic bond structure </span><span class="rvts19">(2)</span><span class="rvts6">. Since the metal center already is selected at this stage, you can now type its element name directly from the keyboard; in this example just type 'fe' to obtain </span><span class="rvts19">(3)</span><span class="rvts6">. To finalize the ferrocene structure, now copy the obtained structure and paste it below the original, rotate it into the desired position, and finally snap the new haptic bond end onto the "Fe" atom of the original structure to obtain </span><span class="rvts19">(4)</span><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -227,11 +230,11 @@
   <div id="hnd-splitter" style="left: 350px"></div>  
 
   <!-- Scripts -->
-  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
   <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
@@ -245,22 +248,7 @@
   <script src="js/app.min.js"></script>
 
   <!-- Init script -->
-  <script>
-    $(function() {
-      // Create the app
-      var app = new Hnd.App({
-        searchEngineMinChars: 3
-      });
-      // Update translations
-      hnd_ut(app);
-	  // Instanciate imageMapResizer
-	  imageMapResize();
-	  // Custom JS
-	  
-      // Boot the app
-      app.Boot();
-    });
-  </script>
+  <script src="_topic_init.js"></script>
 
 
 

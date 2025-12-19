@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="generator" content="HelpNDoc Standard Edition 9.9.0.637">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -17,6 +17,7 @@
 
 
 
+  
   
 
   <!-- Twitter Card data -->
@@ -72,6 +73,8 @@
 
 
 
+  
+
   <div id="skip-link">
     <a href="#main-content" class="element-invisible">Skip to main content</a>
   </div>
@@ -88,8 +91,8 @@
   <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
-      <li id="nav-close"> 
-        <button class="hnd-toggle btn btn-default">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </button>
       </li>
@@ -129,9 +132,9 @@
             <form id="search-form">
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
                       <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                     </button>
                   </span>
@@ -178,16 +181,16 @@
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Summary</span></span></h1>
 <p class="rvps2"><span class="rvts6">This topic demonstrates how to connect structures by snapping their atoms.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="465" height="100" alt="" style="padding : 1px;" src="lib/Snap_Summary.png"><br/><span class="rvts18"><br/></span></p>
-<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<p class="rvps2"><img alt="" style="width : 465px; height : 100px; padding : 1px;" src="lib/Snap_Summary.png"><br/><span class="rvts18"><br/></span></p>
+<hr style="height : 1px; background-color : #000000; border-style : none;">
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Step by Step</span></span></h1>
 <p class="rvps2"><span class="rvts6">Let's assume you want to merge phenol </span><span class="rvts19">(1)</span><span class="rvts6"> with cyclohexane to give the ether </span><span class="rvts19">(3)</span><span class="rvts6">. To do this, first completely select </span><span class="rvts19">(1)</span><span class="rvts6"> by dragging the mouse over it. Then drag the selection rectangle until the phenol oxygen atom overlaps the desired carbon atom on cyclohexane - the atom label will turn yellow on overlap </span><span class="rvts19">(2)</span><span class="rvts6">. Then release the mouse button, which results in the merged product </span><span class="rvts19">(3)</span><span class="rvts6">.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="679" height="161" alt="" style="padding : 1px;" src="lib/Snap_Sequence1.png"></p>
+<p class="rvps2"><img alt="" style="width : 679px; height : 161px; padding : 1px;" src="lib/Snap_Sequence1.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">In above example, the heteroatom replaced the carbon atom. The rule is, that a heteroatom always replaces a carbon atom during snapping, no matter if it is in the dropped part or in the receiving part. If two heteroatoms are snapped, then the dropped one has precedence. The following example demonstrates these rules, as well as the ability to drop several centers at once:</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="728" height="118" alt="" style="padding : 1px;" src="lib/Snap_Sequence2.png"><span class="rvts6"> &nbsp; &nbsp;</span></p>
+<p class="rvps2"><img alt="" style="width : 728px; height : 118px; padding : 1px;" src="lib/Snap_Sequence2.png"><span class="rvts6"> &nbsp; &nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Please note that while above example demonstrates the connection across separate structures, atom snapping also works </span><span class="rvts19">within </span><span class="rvts6">a</span><span class="rvts19"> </span><span class="rvts6">structure.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
@@ -227,11 +230,11 @@
   <div id="hnd-splitter" style="left: 350px"></div>  
 
   <!-- Scripts -->
-  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
   <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
@@ -245,22 +248,7 @@
   <script src="js/app.min.js"></script>
 
   <!-- Init script -->
-  <script>
-    $(function() {
-      // Create the app
-      var app = new Hnd.App({
-        searchEngineMinChars: 3
-      });
-      // Update translations
-      hnd_ut(app);
-	  // Instanciate imageMapResizer
-	  imageMapResize();
-	  // Custom JS
-	  
-      // Boot the app
-      app.Boot();
-    });
-  </script>
+  <script src="_topic_init.js"></script>
 
 
 

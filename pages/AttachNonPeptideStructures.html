@@ -7,7 +7,7 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="generator" content="HelpNDoc Standard Edition 7.7.0.519">
+  <meta name="generator" content="HelpNDoc Standard Edition 9.9.0.637">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="favicon.ico"/>
 
@@ -17,6 +17,7 @@
 
 
 
+  
   
 
   <!-- Twitter Card data -->
@@ -72,6 +73,8 @@
 
 
 
+  
+
   <div id="skip-link">
     <a href="#main-content" class="element-invisible">Skip to main content</a>
   </div>
@@ -88,8 +91,8 @@
   <nav id="panel-left" class="md-nav-expanded">
     <!-- Nav tabs -->
     <ul class="tab-tabs nav nav-tabs" role="tablist">
-      <li id="nav-close"> 
-        <button class="hnd-toggle btn btn-default">
+      <li id="nav-close" role="presentation"> 
+        <button class="hnd-toggle btn btn-default" aria-label="close">
           <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </button>
       </li>
@@ -129,9 +132,9 @@
             <form id="search-form">
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." />
+                  <input type="text" class="form-control" id="input-search" name="input-search" placeholder="Search..." aria-label="Search..." />
                   <span class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
+                    <button class="btn btn-default" type="submit" aria-label="Search...">
                       <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
                     </button>
                   </span>
@@ -177,21 +180,21 @@
                 
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Summary</span></span></h1>
 <p class="rvps2"><span class="rvts6">This topic demonstrates how to attach a non-peptide structure, e.g. a linker or a lipid, to a peptide sequence.</span></p>
-<p class="rvps2"><img width="585" height="202" alt="" style="padding : 1px;" src="lib/Peptride_AttachStruct_Summary.png"><br/><span class="rvts18"><br/></span></p>
-<hr style="height: 1px; color : #000000;  background-color : #000000; border-width : 0px;">
+<p class="rvps2"><img alt="" style="width : 585px; height : 202px; padding : 1px;" src="lib/Peptride_AttachStruct_Summary.png"><br/><span class="rvts18"><br/></span></p>
+<hr style="height : 1px; background-color : #000000; border-style : none;">
 <h1 class="rvps4"><span class="rvts0"><span class="rvts22">Step by Step</span></span></h1>
 <p class="rvps2"><span class="rvts6">Drag the mono-substituted terminal atom of a non-peptide structure over the sequence to connect it to. As soon as the mouse enters the sequence rectangle, all available amino acid attachment points are highlighted.</span></p>
-<p class="rvps2"><img width="287" height="221" alt="" style="padding : 1px;" src="lib/Peptride_AttachStruct_Drop.png"></p>
+<p class="rvps2"><img alt="" style="width : 287px; height : 221px; padding : 1px;" src="lib/Peptride_AttachStruct_Drop.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">Drop the atom on the desired location. The dropped atom can behave in two ways to form the connection, depending on the selected amino acid attachment center.&nbsp;</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <div class="rvps2">
-<table width="100%" border="1" cellpadding="1" cellspacing="2" style="border-color: #969696; border-style: solid; background-color: #f5f5f5; border-spacing: 2px; padding: 2px 0px;">
- <tr valign="top">
-  <td width="570" style="border-color: #f5f5f5; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none;">
+<table width="100%" style="border-color: #969696; border-style: solid; border-width: 1px; background-color: #f5f5f5; border-spacing: 2px; padding: 2px 0px;">
+ <tr style="vertical-align: top;">
+  <td style="border-width : 1px; border-color: #f5f5f5; border-style: solid; padding: 1px; border-top: none; border-right: none; border-bottom: none; border-left: none; width: 570px;">
    <ul style="text-indent: 0px; padding: 0; margin: 0 0 0 24px; list-style-position: outside; list-style-type: disc;">
-    <li class="rvps2"><span class="rvts31">Attachment center is COOH</span><span class="rvts6"> &nbsp;</span><span class="rvts36">→</span><span class="rvts6"> &nbsp;The dropped atom acts as a nucleophile, performing a formal condensation to form an ester, amide, etc. </span><span class="rvts37">Example: Bu-SH + HO(O)C-sequence -&gt; BuS(O)C-sequence</span></li>
-    <li class="rvps2"><span class="rvts31">Attachment center is SH, OH, NHx</span><span class="rvts21">&nbsp;</span><span class="rvts6"> </span><span class="rvts36">→</span><span class="rvts6"> &nbsp;The dropped atom is </span><span class="rvts38">replaced</span><span class="rvts6"> by the attachment center atom. </span><span class="rvts37">Example: Et-Br + HS-Sequence&gt; Et-S-sequence</span><span class="rvts6">.</span></li>
+    <li class="rvps2 noindent"><span class="rvts31">Attachment center is COOH</span><span class="rvts6"> &nbsp;</span><span class="rvts36">→</span><span class="rvts6"> &nbsp;The dropped atom acts as a nucleophile, performing a formal condensation to form an ester, amide, etc. </span><span class="rvts37">Example: Bu-SH + HO(O)C-sequence -&gt; BuS(O)C-sequence</span></li>
+    <li class="rvps2 noindent"><span class="rvts31">Attachment center is SH, OH, NHx</span><span class="rvts21">&nbsp;</span><span class="rvts6"> </span><span class="rvts36">→</span><span class="rvts6"> &nbsp;The dropped atom is </span><span class="rvts38">replaced</span><span class="rvts6"> by the attachment center atom. </span><span class="rvts37">Example: Et-Br + HS-Sequence&gt; Et-S-sequence</span><span class="rvts6">.</span></li>
    </ul>
   </td>
  </tr>
@@ -200,11 +203,11 @@
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">A dialog now lets you specify the attachment point on the selected amino acid.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="291" height="176" alt="" style="padding : 1px;" src="lib/Peptride_AttachStruct_Dialog.png"></p>
+<p class="rvps2"><img alt="" style="width : 291px; height : 176px; padding : 1px;" src="lib/Peptride_AttachStruct_Dialog.png"></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
 <p class="rvps2"><span class="rvts6">After clicking OK, the connection is created. Please note that an ester was formed in this example, according to the above connection rule.</span></p>
 <p class="rvps2"><span class="rvts6"><br/></span></p>
-<p class="rvps2"><img width="726" height="588" alt="" style="padding : 1px;" src="lib/Peptride_AttachStruct_Overall2.png"></p>
+<p class="rvps2"><img alt="" style="width : 726px; height : 588px; padding : 1px;" src="lib/Peptride_AttachStruct_Overall2.png"></p>
 <p class="rvps2"><span class="rvts18"><br/></span></p>
 <p class="rvps2"><span class="rvts18"><br/></span></p>
 <p class="rvps2"><span class="rvts18"></span><span class="rvts6"></span></p>
@@ -242,11 +245,11 @@
   <div id="hnd-splitter" style="left: 350px"></div>  
 
   <!-- Scripts -->
-  <script src="vendors/jquery-3.5.1/jquery.min.js"></script>
+  <script src="vendors/jquery-3.7.1/jquery.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/bootstrap.min.js"></script>
   <script src="vendors/bootstrap-3.4.1/js/ie10-viewport-bug-workaround.js"></script>
   <script src="vendors/markjs-8.11.1/jquery.mark.min.js"></script>
-  <script src="vendors/uri-1.19.2/uri.min.js"></script>
+  <script src="vendors/uri-1.19.11/uri.min.js"></script>
   <script src="vendors/imageMapResizer-1.0.10/imageMapResizer.min.js"></script>
   <script src="vendors/headroom-0.11.0/headroom.min.js"></script>
   <script src="vendors/jstree-3.3.10/jstree.min.js"></script>  
@@ -260,22 +263,7 @@
   <script src="js/app.min.js"></script>
 
   <!-- Init script -->
-  <script>
-    $(function() {
-      // Create the app
-      var app = new Hnd.App({
-        searchEngineMinChars: 3
-      });
-      // Update translations
-      hnd_ut(app);
-	  // Instanciate imageMapResizer
-	  imageMapResize();
-	  // Custom JS
-	  
-      // Boot the app
-      app.Boot();
-    });
-  </script>
+  <script src="_topic_init.js"></script>
 
 
 
