@@ -309,14 +309,9 @@ p,ul,ol /* Paragraph Style */
 .rvps11
 {
  line-height: 1.38;
- margin: 0px 0px 0px 24px;
+ margin: 2px 0px 0px 0px;
 }
 .rvps12
-{
- line-height: 1.38;
- margin: 0px 0px 10px 0px;
-}
-.rvps13
 {
  line-height: 1.80;
  break-after: avoid;
